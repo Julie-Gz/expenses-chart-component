@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Frontend Mentor Expenses chart component solution">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Script -->
+  <script defer src="./javascript/d3.v7.min.js"></script>
+  <script defer src="./javascript/index.js"></script>
+</head>
+<body>
+
+  <div id="container">
+    <header class="container-header flex-container flex-space-between">
+      <img class="header-img" src="./images/logo.svg" alt="two circles overlapping. The first is transparent with a white border and the second is dark brown" width="50" height="50">
+      <div class="header-content">
+        <h1 class="regular-font header-color">My balance</h1>
+        <p class="heavy-font header-color">$921.48</p>
+      </div>
+    </header>
+
+    <main>
+      <header class="chart-header">
+        <h2 class="titles">Spending - Last 7 days</h2>
+      </header>
+
+      <div id="bar-chart-container"></div>
+
+      <footer class="chart-footer flex-container flex-space-between">
+        <div class="spending">
+          <h3 class="total-label labels regular-font">Total this month</h3>
+          <p class="total-spent heavy-font titles">$478.33</p>
+        </div>
+
+        <div class="spending rate flex-container">
+          <h3 class="rate-label labels regular-font">from last month</h3>
+          <p class="spending-rate titles">+2.4%</p>
+        </div>
+      </footer>
+    </main>
+  
+    <footer class="container-footer">
+      <div class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/Julie-Gz">Julie-Gz</a>.</p>
+      </div>  
+    </footer>  
+  </div>
+</body>
+</html>
